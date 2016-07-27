@@ -1,0 +1,133 @@
+<?php
+error_reporting(0);
+if (isset($_POST['itf_datasid'], $_POST['itfactions'])) {
+    $userids = isset($_POST['itf_datasid']) ? $_POST['itf_datasid'] : "0";
+    //print_r($userids);
+    $acts = $_POST['itfactions'];
+    $ids = implode(',', $_POST['itf_datasid']);
+    if ($acts == 'delete') {
+        $obj->Course_deleteAdmin($ids);
+        $urlname = CreateLinkAdmin(array($currentpagenames, "parentid" => $parentids));
+        flash($pagetitle . " is successfully Deleted");
+    }
+    redirectUrl($urlname);
+}
+$obj = new Course();
+$dropdownClass = $obj->showAllCourselist();
+$perpage = $stieinfo['paging_size']; //limit in each page
+$urlpath = CreateLinkAdmin(array($currentpagenames, "parentid" => $parentids)) . "&";
+$pagingobj = new ITFPagination($urlpath, $perpage);
+
+$attObj = new Attendance;
+$InfoData1 = $attObj->ShowAllCourseStudents($_REQUEST);
+$objstudent = new Student();
+$locationName = $objstudent->ShowAllLocation();
+$courseName = $objstudent->ShowAllCourseName();
+$classCode = $objstudent->ShowAllClassCode();
+
+//echo '<pre>';print_r($InfoData1);
+$InfoData = $pagingobj->setPaginateData($InfoData1);
+?>
+<!-- Box -->
+<div class="full_w">
+    <!-- Page Heading -->
+    <div class="h_title"><?php echo $pagetitle; ?></div>
+    <div id="container"></div>
+    <form id="itffrmsearch" name="itffrmsearch" method="post" action="">
+        <input type="hidden" name="itfpage" value="<?php echo $currentpagenames; ?>" />
+        <div class="element">
+            <label>Select Location For Search</label>
+            <select name="loc_id" id="loc_id" >
+                <option value="">---Select Location Name--- </option>
+                <?php
+                foreach ($locationName as $item) {
+                    $idtest = '';
+                    $locationId = $_REQUEST['loc_id'];
+                    ?>
+                    <option value="<?php echo $item['id']; ?>"   <?php if ($locationId == $item['id']) { ?>selected="selected"<?php } ?>><?php echo ucfirst($item['code'] . ' - ' . $item['name']); ?> </option>
+                <?php } ?>
+            </select>     
+        </div>  
+
+        <div class="element">
+            <label>Select Course For Search</label>
+            <select name="course" id="loc_id">
+                <option value="">---Select Course Name--- </option>
+                <?php
+                $courseId = $_REQUEST['course'];
+                foreach ($courseName as $courseItem) {
+                    ?>
+                    <option value="<?php echo $courseItem['id']; ?>"   <?php if ($courseId == $courseItem['id']) { ?>selected="selected"<?php } ?>><?php echo ucfirst($courseItem['name']); ?> </option>
+                <?php } ?>
+            </select>     
+        </div>  
+
+        <div class="element">
+            <label>Select Class Code For Search</label>
+            <select name="classCode" id="classCode">
+                <option value="">---Select Class Code--- </option>
+                <?php
+                foreach ($classCode as $classitem) {
+                    //$idtest = '';
+                    $classId = $_REQUEST['classCode'];
+                    ?>
+                    <option value="<?php echo $classitem['id']; ?>"   <?php if ($classId == $classitem['id']) { ?>selected="selected"<?php } ?>><?php echo ucfirst($classitem['code']); ?> </option>
+                <?php } ?>
+            </select>     
+        </div>  
+        <input name="searchuser" type="submit" id="searchuser"  value="search" />
+    </form>
+</div>
+<div class="clear"></div>
+<form id="itffrmlists" name="itffrmlists" method="post" action="">
+    <input type="hidden" name="itfactions" id="itfactions" value="" />
+    <input type="hidden" name="itf_status" id="itf_status" value="" />
+    <table >
+        <thead style="">
+            <tr>
+               <!-- <th scope="col">&nbsp;<input name="selectalls" id="selectalls" type="checkbox" value="0" /></th>-->
+                <th scope="col" width="16%"><a href="itfmain.php?itfpage=attendance&col=first_name_asc" class="arrow1">&nbsp;</a>First Name<a href="itfmain.php?itfpage=attendance&col=first_name_desc" class="arrow2">&nbsp;</a></th>
+                <th scope="col" width="16%"><a href="itfmain.php?itfpage=attendance&col=last_name_asc" class="arrow1">&nbsp;</a>Last Name<a href="itfmain.php?itfpage=attendance&col=last_name_desc" class="arrow2">&nbsp;</a></th>
+                <th scope="col" width="16%"><a href="itfmain.php?itfpage=attendance&col=class_code_asc" class="arrow1">&nbsp;</a>Class Code<a href="itfmain.php?itfpage=attendance&col=class_code_desc" class="arrow2">&nbsp;</a></th>
+                <th scope="col" width="13%"><a href="itfmain.php?itfpage=attendance&col=course_asc" class="arrow1">&nbsp;</a>Course<a href="itfmain.php?itfpage=attendance&col=course_desc" class="arrow2">&nbsp;</a></th>
+                <th scope="col" width="12%"><a href="itfmain.php?itfpage=attendance&col=loc_name_asc" class="arrow1">&nbsp;</a>Location<a href="itfmain.php?itfpage=attendance&col=loc_name_desc" class="arrow2">&nbsp;</a></th>
+                <th scope="col" width="11%"><a href="itfmain.php?itfpage=attendance&col=class_date_asc" class="arrow1">&nbsp;</a>Date<a href="itfmain.php?itfpage=attendance&col=class_date_desc" class="arrow2">&nbsp;</a></th>
+                <th scope="col" width="18%"><a href="itfmain.php?itfpage=attendance&col=attendance_asc" class="arrow1">&nbsp;</a>Attendance<a href="itfmain.php?itfpage=attendance&col=attendance_desc" class="arrow2">&nbsp;</a></th>                
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            if (count($InfoData1) > 0) {
+                for ($i = 0; $i < count($InfoData1); $i++) {
+                    ?>
+                    <tr>
+                        <!--<td class="align-center"><input name="itf_datasid[]" type="checkbox" value="<?php echo $InfoData[$i]['id']; ?>" class="itflistdatas"/></td>-->
+                        <td class="align-left"><?php echo $InfoData1[$i]['first_name'] ?></td>
+                        <td class="align-left"><?php echo $InfoData1[$i]['last_name']; ?></td>
+                        <td class="align-left"><?php echo $InfoData1[$i]['code']; ?></td>
+                        <td class="align-left"><?php echo $InfoData1[$i]['name']; ?></td>
+                        <td class="align-left"><?php echo $InfoData1[$i]['loc_name']; ?></td>
+                        <td class="align-left"><?php echo $InfoData1[$i]['attendance_date']; ?></td>
+
+                        <td class="align-left"><?php echo $InfoData1[$i]['attendance'] == '1' ? 'Present' : 'Absent'; ?></td>
+                    </tr>
+                    <?php
+                }
+            } else {
+                ?>
+                <tr>
+                    <td colspan="10" class="align-center">No Record Available !</td>
+                </tr>
+            <?php } ?>
+
+        </tbody>
+    </table>
+</form>
+<div class="entry">
+    <div class="pagination">
+        <?php echo $pagingobj->Pages(); ?>
+    </div>
+    <div class="sep"></div>
+</div>
+
+<!-- End Box -->

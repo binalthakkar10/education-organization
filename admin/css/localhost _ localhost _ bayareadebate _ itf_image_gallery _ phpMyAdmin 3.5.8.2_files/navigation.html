@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+    <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- base href="http://localhost/phpmyadmin/navigation.php?target=tbl_structure.php&token=601385fbe9cc66f8dac58614fffc084a&db=bayareadebate&table=itf_image_gallery" -->
+    <link rel="stylesheet" type="text/css" href="navigation_data/phpmyadmin.css">
+    <script src="localhost%20_%20localhost%20_%20bayareadebate%20_%20itf_image_gallery%20%7C%20phpMyAdmin%203.5.8.2_files/jquery-1.js" type="text/javascript"></script>
+<script src="navigation_data/jquery-ui-1.js" type="text/javascript"></script>
+<script src="navigation_data/jquery.js" type="text/javascript"></script>
+<script src="navigation_data/navigation.js" type="text/javascript"></script>
+<script src="navigation_data/functions.js" type="text/javascript"></script>
+<script src="navigation_data/messages.php" type="text/javascript"></script>
+<script src="navigation_data/get_image.php" type="text/javascript"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // INIT PMA_setFrameSize
+    var onloadCnt = 0;
+    var onLoadHandler = window.onload;
+    var resizeHandler = window.onresize;
+    window.document.onresize  = resizeHandler;
+    window.onload = function() {
+        if (onloadCnt == 0) {
+            if (typeof(onLoadHandler) == "function") {
+                onLoadHandler();
+            }
+            if (typeof(PMA_setFrameSize) != 'undefined' && typeof(PMA_setFrameSize) == 'function') {
+                PMA_setFrameSize();
+            }
+            onloadCnt++;
+        }
+    };
+    window.onresize = function() {
+        if (typeof(resizeHandler) == "function") {
+            resizeHandler();
+        }
+        if (typeof(PMA_saveFrameSize) != 'undefined' && typeof(PMA_saveFrameSize) == 'function') {
+            PMA_saveFrameSize();
+        }
+    };
+    // ]]>
+    </script>
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body id="body_leftFrame">
+<div id="pmalogo">
+<a href="http://localhost/phpmyadmin/main.php?token=601385fbe9cc66f8dac58614fffc084a" target="frame_content"><img src="navigation_data/logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a>
+</div>
+<div id="leftframelinks">
+<a href="http://localhost/phpmyadmin/main.php?token=601385fbe9cc66f8dac58614fffc084a" title="Home"><img src="navigation_data/dot.gif" title="Home" alt="Home" class="icon ic_b_home"></a>
+<a href="http://localhost/phpmyadmin/index.php?token=601385fbe9cc66f8dac58614fffc084a&amp;old_usr=root" target="_parent" title="Log out"><img src="navigation_data/dot.gif" title="Log out" alt="Log out" class="icon ic_s_loggoff"></a>
+<a href="http://localhost/phpmyadmin/querywindow.php?db=bayareadebate&amp;table=itf_image_gallery&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;no_js=true" title="Query window" onclick="if (window.parent.open_querywindow()) return false;"><img src="navigation_data/dot.gif" title="Query window" alt="Query window" class="icon ic_b_selboard"></a>
+    <a href="http://localhost/phpmyadmin/Documentation.html" target="documentation" title="phpMyAdmin documentation"><img src="navigation_data/dot.gif" title="phpMyAdmin documentation" alt="phpMyAdmin documentation" class="icon ic_b_docs"></a><a href="http://localhost/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Findex.html&amp;token=601385fbe9cc66f8dac58614fffc084a" target="mysql_doc"><img src="navigation_data/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_sqlhelp"></a>
+<a href="http://localhost/phpmyadmin/navigation.php??uniqid=52e66182830e8&amp;db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a" title="Reload navigation frame" target="frame_navigation"><img src="navigation_data/dot.gif" title="Reload navigation frame" alt="Reload navigation frame" class="icon ic_s_reload"></a></div>
+<div id="recentTableList">
+<form method="post" action="index.php" target="_parent">
+<input name="token" value="601385fbe9cc66f8dac58614fffc084a" type="hidden">
+<input name="goto" id="LeftDefaultTabTable" value="tbl_structure.php" type="hidden"><select name="selected_recent_table" id="recentTable"><option selected="selected" value="">(Recent tables) ...</option><option value="{&quot;db&quot;:&quot;bayareadebate&quot;,&quot;table&quot;:&quot;itf_image_gallery&quot;}">`bayareadebate`.`itf_image_gallery`</option><option value="{&quot;db&quot;:&quot;bayareadebate&quot;,&quot;table&quot;:&quot;itf_album&quot;}">`bayareadebate`.`itf_album`</option><option value="{&quot;db&quot;:&quot;bayareadebate&quot;,&quot;table&quot;:&quot;itf_grade&quot;}">`bayareadebate`.`itf_grade`</option><option value="{&quot;db&quot;:&quot;bayareadebate&quot;,&quot;table&quot;:&quot;itf_banner&quot;}">`bayareadebate`.`itf_banner`</option><option value="{&quot;db&quot;:&quot;bayareadebate&quot;,&quot;table&quot;:&quot;itf_image_galary&quot;}">`bayareadebate`.`itf_image_galary`</option></select><noscript>
+<input type="submit" name="Go" value="Go" />
+</noscript>
+</form>
+</div>
+
+    <div id="databaseList">
+    <form method="post" action="index.php" target="_parent" id="left">
+    <input name="token" value="601385fbe9cc66f8dac58614fffc084a" type="hidden">
+<select name="db" id="lightm_db" xml:lang="en" dir="ltr" onchange="if (this.value != '') window.parent.openDb(this.value);">
+<option value="" dir="ltr">(Databases) ...</option>
+<option value="bayareadebate" title="" selected="selected">bayareadebate</option>
+<option value="college" title="">college</option>
+<option value="freesms" title="">freesms</option>
+<option value="information_schema" title="">information_schema</option>
+<option value="moe" title="">moe</option>
+<option value="moeOld" title="">moeOld</option>
+<option value="mysql" title="">mysql</option>
+<option value="performance_schema" title="">performance_schema</option>
+<option value="student_tracker" title="">student_tracker</option>
+<option value="test" title="">test</option>
+<optgroup label="trade2ri">
+<option value="trade2ri_plucka" title="">_plucka</option>
+<option value="trade2ri_student_tracker" title="">_student_tracker</option>
+</optgroup>
+</select>
+<noscript>
+<input type="submit" name="Go" value="Go" />
+</noscript>
+</form>
+</div>
+
+<div id="left_tableList">
+        <span style="display: inline;" id="NavFilter">
+        <span id="clear_fast_filter" title="Clear">X</span>
+            <input class="gray" name="fast_filter" id="fast_filter" title="Filter tables by name" value="Filter tables by name" type="text">
+        </span>
+        <ul id="subel0"><li>
+<a class="tableicon" title="Structure:  (222 Rows)" id="quick_bayareadebate.itf_active_quote_chat" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_active_quote_chat&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_active_quote_chat" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_active_quote_chat&amp;pos=0" title="Browse:  (222 Rows)" id="bayareadebate.itf_active_quote_chat">itf_active_quote_chat</a></li>
+<li>
+<a class="tableicon" title="Structure:  (0 Rows)" id="quick_bayareadebate.itf_album" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_album&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_album" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_album&amp;pos=0" title="Browse:  (0 Rows)" id="bayareadebate.itf_album">itf_album</a></li>
+<li>
+<a class="tableicon" title="Structure:  (6 Rows)" id="quick_bayareadebate.itf_banner" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_banner&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_banner" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_banner&amp;pos=0" title="Browse:  (6 Rows)" id="bayareadebate.itf_banner">itf_banner</a></li>
+<li>
+<a class="tableicon" title="Structure:  (239 Rows)" id="quick_bayareadebate.itf_bid" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_bid&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_bid" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_bid&amp;pos=0" title="Browse:  (239 Rows)" id="bayareadebate.itf_bid">itf_bid</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2,419 Rows)" id="quick_bayareadebate.itf_category" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_category&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_category" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_category&amp;pos=0" title="Browse:  (2,419 Rows)" id="bayareadebate.itf_category">itf_category</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2 Rows)" id="quick_bayareadebate.itf_category_type" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_category_type&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_category_type" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_category_type&amp;pos=0" title="Browse:  (2 Rows)" id="bayareadebate.itf_category_type">itf_category_type</a></li>
+<li>
+<a class="tableicon" title="Structure:  (252 Rows)" id="quick_bayareadebate.itf_country" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_country&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_country" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_country&amp;pos=0" title="Browse:  (252 Rows)" id="bayareadebate.itf_country">itf_country</a></li>
+<li>
+<a class="tableicon" title="Structure:  (5 Rows)" id="quick_bayareadebate.itf_course" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_course&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_course" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_course&amp;pos=0" title="Browse:  (5 Rows)" id="bayareadebate.itf_course">itf_course</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2 Rows)" id="quick_bayareadebate.itf_grade" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_grade&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_grade" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_grade&amp;pos=0" title="Browse:  (2 Rows)" id="bayareadebate.itf_grade">itf_grade</a></li>
+<li>
+<a class="tableicon" title="Structure:  (1)" id="quick_bayareadebate.itf_image_gallery" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_image_gallery&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_image_gallery" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_image_gallery&amp;pos=0" title="Browse:  (1)" id="bayareadebate.itf_image_gallery">itf_image_gallery</a></li>
+<li>
+<a class="tableicon" title="Structure:  (14 Rows)" id="quick_bayareadebate.itf_mails" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_mails&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_mails" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_mails&amp;pos=0" title="Browse:  (14 Rows)" id="bayareadebate.itf_mails">itf_mails</a></li>
+<li>
+<a class="tableicon" title="Structure:  (7 Rows)" id="quick_bayareadebate.itf_membership" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_membership&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_membership" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_membership&amp;pos=0" title="Browse:  (7 Rows)" id="bayareadebate.itf_membership">itf_membership</a></li>
+<li>
+<a class="tableicon" title="Structure:  (3 Rows)" id="quick_bayareadebate.itf_money_request" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_money_request&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_money_request" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_money_request&amp;pos=0" title="Browse:  (3 Rows)" id="bayareadebate.itf_money_request">itf_money_request</a></li>
+<li>
+<a class="tableicon" title="Structure:  (1 Rows)" id="quick_bayareadebate.itf_newsletter" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_newsletter&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_newsletter" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_newsletter&amp;pos=0" title="Browse:  (1 Rows)" id="bayareadebate.itf_newsletter">itf_newsletter</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2 Rows)" id="quick_bayareadebate.itf_options" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_options&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_options" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_options&amp;pos=0" title="Browse:  (2 Rows)" id="bayareadebate.itf_options">itf_options</a></li>
+<li>
+<a class="tableicon" title="Structure:  (210 Rows)" id="quick_bayareadebate.itf_order" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_order&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_order" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_order&amp;pos=0" title="Browse:  (210 Rows)" id="bayareadebate.itf_order">itf_order</a></li>
+<li>
+<a class="tableicon" title="Structure:  (479 Rows)" id="quick_bayareadebate.itf_order_detail" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_order_detail&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_order_detail" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_order_detail&amp;pos=0" title="Browse:  (479 Rows)" id="bayareadebate.itf_order_detail">itf_order_detail</a></li>
+<li>
+<a class="tableicon" title="Structure:  (8 Rows)" id="quick_bayareadebate.itf_pagecms" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_pagecms&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_pagecms" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_pagecms&amp;pos=0" title="Browse:  (8 Rows)" id="bayareadebate.itf_pagecms">itf_pagecms</a></li>
+<li>
+<a class="tableicon" title="Structure:  (87 Rows)" id="quick_bayareadebate.itf_payment" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_payment&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_payment" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_payment&amp;pos=0" title="Browse:  (87 Rows)" id="bayareadebate.itf_payment">itf_payment</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2 Rows)" id="quick_bayareadebate.itf_price_type" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_price_type&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_price_type" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_price_type&amp;pos=0" title="Browse:  (2 Rows)" id="bayareadebate.itf_price_type">itf_price_type</a></li>
+<li>
+<a class="tableicon" title="Structure:  (9,098 Rows)" id="quick_bayareadebate.itf_product" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_product&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_product" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_product&amp;pos=0" title="Browse:  (9,098 Rows)" id="bayareadebate.itf_product">itf_product</a></li>
+<li>
+<a class="tableicon" title="Structure:  (3 Rows)" id="quick_bayareadebate.itf_product_group" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_product_group&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_product_group" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_product_group&amp;pos=0" title="Browse:  (3 Rows)" id="bayareadebate.itf_product_group">itf_product_group</a></li>
+<li>
+<a class="tableicon" title="Structure:  (147 Rows)" id="quick_bayareadebate.itf_quote" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_quote" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote&amp;pos=0" title="Browse:  (147 Rows)" id="bayareadebate.itf_quote">itf_quote</a></li>
+<li>
+<a class="tableicon" title="Structure:  (126 Rows)" id="quick_bayareadebate.itf_quote_chat" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote_chat&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_quote_chat" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote_chat&amp;pos=0" title="Browse:  (126 Rows)" id="bayareadebate.itf_quote_chat">itf_quote_chat</a></li>
+<li>
+<a class="tableicon" title="Structure:  (270 Rows)" id="quick_bayareadebate.itf_quote_detail" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote_detail&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_quote_detail" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote_detail&amp;pos=0" title="Browse:  (270 Rows)" id="bayareadebate.itf_quote_detail">itf_quote_detail</a></li>
+<li>
+<a class="tableicon" title="Structure:  (45 Rows)" id="quick_bayareadebate.itf_quote_review" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote_review&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_quote_review" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_quote_review&amp;pos=0" title="Browse:  (45 Rows)" id="bayareadebate.itf_quote_review">itf_quote_review</a></li>
+<li>
+<a class="tableicon" title="Structure:  (277 Rows)" id="quick_bayareadebate.itf_service_category" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_service_category&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_service_category" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_service_category&amp;pos=0" title="Browse:  (277 Rows)" id="bayareadebate.itf_service_category">itf_service_category</a></li>
+<li>
+<a class="tableicon" title="Structure:  (1 Rows)" id="quick_bayareadebate.itf_siteinfo" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_siteinfo&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_siteinfo" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_siteinfo&amp;pos=0" title="Browse:  (1 Rows)" id="bayareadebate.itf_siteinfo">itf_siteinfo</a></li>
+<li>
+<a class="tableicon" title="Structure:  (4 Rows)" id="quick_bayareadebate.itf_state" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_state&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_state" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_state&amp;pos=0" title="Browse:  (4 Rows)" id="bayareadebate.itf_state">itf_state</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2 Rows)" id="quick_bayareadebate.itf_subject" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_subject&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_subject" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_subject&amp;pos=0" title="Browse:  (2 Rows)" id="bayareadebate.itf_subject">itf_subject</a></li>
+<li>
+<a class="tableicon" title="Structure:  (13 Rows)" id="quick_bayareadebate.itf_subscriber" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_subscriber&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_subscriber" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_subscriber&amp;pos=0" title="Browse:  (13 Rows)" id="bayareadebate.itf_subscriber">itf_subscriber</a></li>
+<li>
+<a class="tableicon" title="Structure:  (1 Rows)" id="quick_bayareadebate.itf_summercamp" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_summercamp&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_summercamp" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_summercamp&amp;pos=0" title="Browse:  (1 Rows)" id="bayareadebate.itf_summercamp">itf_summercamp</a></li>
+<li>
+<a class="tableicon" title="Structure:  (2 Rows)" id="quick_bayareadebate.itf_tournaments" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_tournaments&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_tournaments" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_tournaments&amp;pos=0" title="Browse:  (2 Rows)" id="bayareadebate.itf_tournaments">itf_tournaments</a></li>
+<li>
+<a class="tableicon" title="Structure:  (95 Rows)" id="quick_bayareadebate.itf_users" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_users&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_users" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_users&amp;pos=0" title="Browse:  (95 Rows)" id="bayareadebate.itf_users">itf_users</a></li>
+<li>
+<a class="tableicon" title="Structure:  (172 Rows)" id="quick_bayareadebate.itf_users_temp" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_users_temp&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_users_temp" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_users_temp&amp;pos=0" title="Browse:  (172 Rows)" id="bayareadebate.itf_users_temp">itf_users_temp</a></li>
+<li>
+<a class="tableicon" title="Structure:  (4 Rows)" id="quick_bayareadebate.itf_usertype" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_usertype&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_usertype" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_usertype&amp;pos=0" title="Browse:  (4 Rows)" id="bayareadebate.itf_usertype">itf_usertype</a></li>
+<li>
+<a class="tableicon" title="Structure:  (148 Rows)" id="quick_bayareadebate.itf_user_profile" href="http://localhost/phpmyadmin/tbl_structure.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_user_profile&amp;goto=tbl_structure.php"><img src="navigation_data/dot.gif" title="Structure" alt="Structure" id="icon_bayareadebate.itf_user_profile" class="icon ic_b_browse"></a><a href="http://localhost/phpmyadmin/sql.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a&amp;table=itf_user_profile&amp;pos=0" title="Browse:  (148 Rows)" id="bayareadebate.itf_user_profile">itf_user_profile</a></li>
+</ul><ul id="newtable"><li><a target="frame_content" href="http://localhost/phpmyadmin/tbl_create.php?db=bayareadebate&amp;token=601385fbe9cc66f8dac58614fffc084a" class="ajax"><img src="navigation_data/dot.gif" title="Create table" alt="Create table" id="icon_newtable" class="icon ic_b_snewtbl">Create table</a></li></ul></div>
+</body></html>

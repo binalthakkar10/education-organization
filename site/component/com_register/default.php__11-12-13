@@ -1,0 +1,17 @@
+<div class="main_mat">
+<p><a href="<?php echo ITFPATH; ?>">Home</a> / <a href=" ">Register</a> </p>
+</div>
+<div class="regis">
+    <div class="regis_lft">
+    <p>Customer Registration</p>
+    <p><a href="<?php echo CreateLink(array("register","itemid"=>"customer")); ?>">register</a></p>
+    </div>
+    <div class="regis_mid">
+    <img src="<?php echo TemplateUrl();?>images/regis_separater.jpg" alt="">
+    </div>
+    <div class="regis_rgt">
+    <p>Supplier Registration</p>
+    <p><a href="<?php echo CreateLink(array("register","itemid"=>"supplier")); ?>">register</a></p>
+    </div>
+    <div class="clear"></div>
+ </div>

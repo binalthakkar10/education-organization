@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Plucka Helping Hand</title>
+<style type="text/css">
+<!--
+.style1 {font-weight: bold}
+-->
+</style>
+</head>
+
+<body>
+<table width="642" border="1" align="center" cellpadding="5" cellspacing="0">
+  <tr>
+    <td height="83" style="font-size:25px;">
+	<a href="http://trade2rise.com/project/plucka/" style="color:#FFFFFF;"><img border="1" src="http://trade2rise.com/project/plucka/template/default/images/logo.png" title="Plucka Helping Hand"></a></td>
+  </tr>
+  <tr>
+    <td>
+	 		<p>{MAIL_DATA}
+			 
+              <br />
+              <br />
+     <p> <strong>Thanks and Regards<br />
+	 &nbsp;&nbsp;Plucka Helping Hand </strong></p></td>
+  </tr>
+  <tr>
+    <td height="52" align="center" style="font-size:12px;"><a href="" style="color:#000000;">Plucka Helping Hand</a></td>
+  </tr>
+</table>
+</body>
+</html>

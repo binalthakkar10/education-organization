@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Website Title</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.accordionMenu.js"></script>
+<script>
+		jQuery(function() {
+			jQuery("#acdnmenu").accordionMenu();
+		});
+	</script>
+<style>
+body {
+background-color: white;
+}
+#acdnmenu {
+height: 300px;
+width: 240px;
+margin: 0px;
+}
+#acdnmenu ul.acdnTop {
+display: block;
+border: 1px solid #D8E2F3;
+background: none repeat scroll 0 0 #FFFFFF;
+padding-left: 0;
+}
+#acdnmenu div.acdnHeading, #acdnmenu a.acdnLink {
+background: url("bg.gif") repeat-x scroll 0 0 #E8FFF8;
+color: #000000;
+font: 12px Verdana;
+outline: medium none;
+padding: 8px 8px 8px 24px;
+text-align: left;
+text-decoration: none;
+}
+#acdnmenu div.acdnCurrent, #acdnmenu div:hover, #acdnmenu a.acdnLink:hover, #acdnmenu div.acdnCurrent a.acdnLink {
+background-position: 0 -64px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+}
+#acdnmenu a.acdnCurrent, #acdnmenu a.acdnCurrent:hover {
+color: #336699;
+text-decoration: none;
+}
+#acdnmenu div.acdnArrowImage {
+background-image: url("arrows.gif");
+background-position: 0 0;
+height: 12px;
+left: 4px;
+top: 9px;
+width: 12px;
+}
+#acdnmenu div.acdnCurrent div.acdnArrowImage {
+background-position: 0 -12px;
+}
+#acdnmenu li.acdnSeparator {
+border-bottom: 1px solid #D8E2F3;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+font-size: 0px;
+}
+#acdnmenu ul.acdnSub {
+padding-left: 14px;
+}
+#acdnmenu ul.acdnSub div.acdnHeading {
+background: none repeat scroll 0 0 transparent;
+color: #000000;
+font: 12px Arial;
+padding: 5px 5px 5px 20px;
+text-align: left;
+}
+#acdnmenu ul.acdnSub div.acdnHeading a {
+color: #000000;
+}
+#acdnmenu ul.acdnSub div.acdnCurrent {
+background: none repeat scroll 0 0 transparent;
+color: #000000;
+}
+#acdnmenu ul.acdnSub a.acdnLink {
+background: none repeat scroll 0 0 transparent;
+color: #000000;
+font: 11px Arial;
+padding: 5px 5px 5px 20px;
+text-decoration: none;
+}
+#acdnmenu ul.acdnSub a.acdnLink:hover, #acdnmenu ul.acdnSub a.acdnCurrent, #acdnmenu ul.acdnSub div.acdnHeading a:hover, #acdnmenu ul.acdnSub div.acdnHeading a.acdnCurrent {
+background: none repeat scroll 0 0 transparent;
+color: #000000;
+text-decoration: underline;
+}
+#acdnmenu ul.acdnSub div.acdnArrowImage {
+background-image: url("arrows.gif");
+background-position: 0 -24px;
+height: 12px;
+left: 4px;
+top: 6px;
+width: 12px;
+}
+#acdnmenu ul.acdnSub div.acdnCurrent div.acdnArrowImage {
+background-position: 0 -36px;
+}
+#acdnmenu, #acdnmenu ul {
+display: block;
+font-size: 0;
+line-height: 0;
+}
+#acdnmenu li {
+font-size: 12px;
+line-height: 16px;
+}
+#acdnmenu:after {
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden;
+}
+#acdnmenu ul {
+list-style-type: none;
+margin: 0px;
+overflow: hidden;
+padding: 0px;
+position: relative;
+top: 0px;
+display: none;
+}
+#acdnmenu li {
+margin: 0px;
+padding: 0px;
+}
+#acdnmenu div.acdnHeading, #acdnmenu div.acdnCurrent {
+cursor: pointer;
+position: relative;
+}
+#acdnmenu div.acdnArrowImage {
+overflow: hidden;
+position: absolute;
+}
+</style>
+</head>
+<body>
+<div id="menu">
+<nav>
+<div id="acdnmenu" style="width:208px;height:390px; background-color:#e2ecf5; padding: 10px 10px 10px 10px;">
+<ul>
+<li>Topic
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+</ul>
+</li>
+<li>Sub Menu
+<ul>
+<li><a href="#">Link 1</a> </li>
+<li>Sub Level 1
+<ul>
+<li><a href="#">Sub Link 1</a></li>
+<li><a href="#">Sub Link 2</a></li>
+<li>Sub Level 2
+<ul>
+<li><a href="#">Sub Link 1</a></li>
+<li><a href="#">Sub Link 2</a></li>
+<li><a href="#">Sub Link 3</a></li>
+<li><a href="#">Sub Link 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Normal Link 1</a></li>
+<li><a href="#">Normal Link 2</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

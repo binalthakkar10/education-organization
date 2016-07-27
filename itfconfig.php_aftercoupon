@@ -1,0 +1,100 @@
+<?php
+//error_reporting( E_ALL );
+error_reporting(0);
+define('ITFOSTERS','Developement Company');
+date_default_timezone_set("America/Los_Angeles");
+global $ITF_JSFILES,$ITF_CSSFILE;
+$ITF_JSFILES=array();
+$ITF_CSSFILE=array();
+
+if(!@session_start())
+session_start();
+$BASEPATHS = dirname(__FILE__);
+
+//$BASEPATHS = $BASEPATHS . '/';
+
+//define('BASE_DIR',basename(__DIR__) );
+
+define('BASE_DIR','');
+
+//echo BASE_DIR;
+
+$iLocal = 1;
+
+if($iLocal=="1")
+{
+	define('BASEPATHS',$BASEPATHS);
+	define('ITFPATH',$BASEPATHS);
+	define('MYSQLDB_HOST' , 'localhost');
+	define('MYSQLDB_USER' , 'shahdeep_ankit');
+        define('MYSQLDB_DATABASE', 'trade2ri_bayareadebate');
+        define('MYSQLDB_PASS' , 'smile12');
+	define('MYSQLDB_PORT' , 3306);
+	define('SITEURL','http://bayareadebateclub.com');
+        define('FCK_PATH','/home/askhuran/public_html/fck_files/');
+}
+
+	define('SITEPATH',BASEPATHS);
+	define('CSSPATH',ITFPATH.'css/');
+	define('ITF_JSPATH',ITFPATH.'js/');
+	define('IMAGEPATH',ITFPATH.'images/');
+	define('PUBLICFILE',BASEPATHS.'/itf_public/');
+	define('PUBLICPATH',SITEURL.'/itf_public/');
+	define('COMPONENTPATH',SITEPATH."/site/component/com_");
+	
+	//paypal
+//define('PAYPALUSERNAMEAPI','rahul_api1.shahdeep.com');
+//define('PAYPALLPASSWORD','1368427049');
+//define('PAYPALLSIGNATURE','ABwn-gjfFztLHqkrEnwbPxZigmTuA55hTqI0M326.3-Xom-OtvRGLc3C');
+
+//paypall business.
+//define('PAYPALBUSINESSUSERNAME','sdibsl_1326174352_biz@gmail.com');	
+	
+$paypal_environment = 'live'; //'sandbox' or 'beta-sandbox' or 'live'	
+
+if ( "sandbox" === $paypal_environment || "beta-sandbox" === $paypal_environment ) {
+        define('PAYPALUSERNAMEAPI', 'info-facilitator_api1.bayareadebateclub.com');
+        define('PAYPALLPASSWORD', '1403135803');
+        define('PAYPALLSIGNATURE', 'AFcWxV21C7fd0v3bYYYRCpSSRl31A8dFfCt77SHdx-BmnbnSqsUYBcqR');
+        
+        define('PAYPALLURL', "https://api-3t.$paypal_environment.paypal.com/nvp");
+        
+} elseif ( "live" === $paypal_environment ) {
+        define('PAYPALUSERNAMEAPI', 'ashish_api1.bayareadebateclub.com');
+        define('PAYPALLPASSWORD', '96E4TX9EZV9A6EVK');
+        define('PAYPALLSIGNATURE', 'ARDXVGybxMTNTSp-2wRpZzXOEa7ZAGO3liRrTILvmGXlsq7YYYSpfzny');
+        
+        define('PAYPALLURL', 'https://api-3t.paypal.com/nvp');
+        
+}
+
+
+
+
+//==============================PLEASE DO NOT CHANGE BELOW CODE. IT MIGHT COUSE PROBLEM============================================
+
+
+define('DBOF_SHOW_NO_ERRORS'    , 0);
+define('DBOF_SHOW_ALL_ERRORS'   , 1);
+define('DBOF_RETURN_ALL_ERRORS' , 2);
+define('MYSQLAPPNAME' , 'MySQL_class');
+define('DB_ERRORMODE', DBOF_SHOW_ALL_ERRORS);
+define('MYSQLDB_ADMINEMAIL' , 'ankitengr@gmail.com');
+define('MYSQLDB_SENTMAILONERROR', 0);
+define('MYSQLDB_USE_PCONNECT', 0);
+define('MYSQLDB_CHARACTERSET'   , 'utf8');
+define('DBOF_DEBUGOFF'    , (1 << 0));
+define('DBOF_DEBUGSCREEN' , (1 << 1));
+define('DBOF_DEBUGFILE'   , (1 << 2));
+define('ADMINEMAILID' , 'ankitengr@gmail.com');
+
+require_once(BASEPATHS.'/includes/classinformation.php');
+global $itfmysql,$itftemplate;
+$itfmysql = new Mysql();
+$itfmysql->Connect();
+Template::setTemplate("default");
+
+$userobjs = new User();
+$uploadimg = new ITFImageResize();
+$objsite = new Site();
+$stieinfo = $objsite->CheckSite("1");

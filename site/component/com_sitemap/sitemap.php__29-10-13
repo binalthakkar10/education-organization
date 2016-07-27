@@ -1,0 +1,39 @@
+<!--<div class="main_mat">
+<p><a href="<?php //echo ITFPATH; ?>">Home</a> / <a href=" ">Register</a> </p>
+</div>-->
+   <div class="about_us1">
+         <h3>Sitemap</h3>
+         <div class="regis">
+        <div class="regis_lft1">
+        <p>Top Menus</p>
+         <li><a href="<?php echo SITEURL; ?>" <?php echo ($currentpage=="index")?'class="active"':"";?>>Home</a></li>
+        <li><a href="<?php echo SITEURL; ?>/blog">Blog </a></li>
+        <li><a href="<?php echo CreateLink(array("contents","itemid"=>'about-us')); ?>" >About Us</a></li>
+        
+      
+        <li><a href="<?php echo CreateLink(array("register","itemid"=>"supplier")); ?>">Register as a Seller</a></li>
+        <li><a href="<?php echo CreateLink(array("register","itemid"=>"customer")); ?>">Register as a Buyer</a></li>
+                
+        
+        <li><a href="<?php echo CreateLink(array("contents","itemid"=>'faq')); ?>">FAQ</a></li>
+        <li><a href="<?php echo CreateLink(array("contact")); ?>">Contact Us</a></li>
+       
+        </div>
+        <div class="regis_mid">
+        <img src="<?php echo TemplateUrl();?>images/regis_separater.jpg" alt="">
+        </div>
+        <div class="regis_rgt1">
+        <p>Footer Menus</p>
+        
+        <li> <a href="<?php echo CreateLink(array("contents","itemid"=>'terms-condition')); ?>">Terms & Conditions</a></li>
+        <li>     <a href="<?php echo CreateLink(array("contents","itemid"=>'privacy-policy')); ?>">Privacy Policy</a></li>
+        <li>      <a href="<?php echo CreateLink(array("listbusiness")); ?>">List Business</a></li>
+         <li>      <a href="<?php echo CreateLink(array("category_list")); ?>">Category List</a></li>
+         <li>        <a href="<?php echo CreateLink(array("dashboard","itemid"=>'business')); ?>">Post Ad</a></li>
+        
+       
+        </div>
+        <div class="clear"></div>
+    </div>
+         </div>
+

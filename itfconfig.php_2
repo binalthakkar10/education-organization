@@ -1,0 +1,73 @@
+<?php
+define('ITFOSTERS','Developement Company');
+date_default_timezone_set("Asia/Calcutta");
+global $ITF_JSFILES,$ITF_CSSFILE;
+$ITF_JSFILES=array();
+$ITF_CSSFILE=array();
+
+if(!@session_start())
+session_start();
+$BASEPATHS = dirname(__FILE__);
+$iLocal = 1;
+
+if($iLocal=="0")
+{
+	define('BASEPATHS',$BASEPATHS);
+	define('ITFPATH','/plucka/');
+	define('MYSQLDB_HOST' , 'localhost');
+	define('MYSQLDB_USER' , 'root');
+	define('MYSQLDB_PASS' , '');
+	define('MYSQLDB_DATABASE', 'plucka');
+	define('MYSQLDB_PORT' , 3306);
+	define('SITEURL','http://localhost/plucka');
+	
+}
+else
+{
+	define('BASEPATHS',$BASEPATHS);
+	define('ITFPATH','/plucka/');
+	define('MYSQLDB_HOST' , 'localhost');
+	define('MYSQLDB_USER' , 'traderi1_amuser');
+	define('MYSQLDB_PASS' , 'Database@123!');
+	define('MYSQLDB_DATABASE', 'traderi1_plucka');
+	define('MYSQLDB_PORT' , 3306);
+	define('SITEURL','http://project.trade2rise.com/plucka');
+}
+
+
+	define('SITEPATH',BASEPATHS);
+	define('CSSPATH',ITFPATH.'css/');
+	define('ITF_JSPATH',ITFPATH.'js/');
+	define('IMAGEPATH',ITFPATH.'image/');
+	define('PUBLICFILE',BASEPATHS.'/itf_public/');
+	define('PUBLICPATH',SITEURL.'/itf_public/');
+	define('COMPONENTPATH',SITEPATH."/site/component/com_");
+	
+	
+//==============================PLEASE DO NOT CHANGE BELOW CODE. IT MIGHT COUSE PROBLEM============================================
+
+
+define('DBOF_SHOW_NO_ERRORS'    , 0);
+define('DBOF_SHOW_ALL_ERRORS'   , 1);
+define('DBOF_RETURN_ALL_ERRORS' , 2);
+define('MYSQLAPPNAME' , 'MySQL_class');
+define('DB_ERRORMODE', DBOF_SHOW_ALL_ERRORS);
+define('MYSQLDB_ADMINEMAIL' , 'info@shahdeep.com');
+define('MYSQLDB_SENTMAILONERROR', 0);
+define('MYSQLDB_USE_PCONNECT', 0);
+define('MYSQLDB_CHARACTERSET'   , 'utf8');
+define('DBOF_DEBUGOFF'    , (1 << 0));
+define('DBOF_DEBUGSCREEN' , (1 << 1));
+define('DBOF_DEBUGFILE'   , (1 << 2));
+define('ADMINEMAILID' , 'info@shahdeep.com');
+
+require_once(BASEPATHS.'/includes/classinformation.php');
+global $itfmysql,$itftemplate;
+$itfmysql=new Mysql();
+$itfmysql->Connect();
+Template::setTemplate("default");
+
+$userobjs=new User();
+$uploadimg=new ITFImageResize();
+$objsite=new Site();
+$stieinfo = $objsite->CheckSite("1");

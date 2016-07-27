@@ -1,0 +1,319 @@
+<?php
+
+class Class1 {
+
+    function __construct() {
+        global $itfmysql;
+        $this->dbcon = $itfmysql;
+    }
+
+    function admin_addClass($datas) {
+        unset($datas['id']);
+        $startDate = date('Y-m-d', strtotime($datas['start_date']));
+        $datas['start_date'] = $startDate;
+        $endDate = date('Y-m-d', strtotime($datas['end_date']));
+        $datas['end_date'] = $endDate;
+        $datas['created_date'] = date('Y-m-d H:i:s');
+        $datas['modified_date'] = date('Y-m-d H:i:s');
+        $inslmntDate = date('Y-m-d', strtotime($datas['installment_start_date']));
+        $datas['installment_start_date'] = $inslmntDate;
+        if ($datas['registration_type'] == 'internal') {
+            $datas['link'] = '';
+        }
+        $datas['day_of_week'] = implode(',', $datas['day_of_week']);
+        $datas['teacher_assigned'] = implode(',', $datas['teacher_assigned']);
+        $class_id = $this->dbcon->Insert('itf_class', $datas);
+        $formData = array();
+        $datas['class_id'] = $class_id;
+        $datas['form_type'] = $datas['type'];
+        $this->uploadRegForm($datas);
+    }
+
+    function admin_updateClass($datas) {
+
+        $condition = array('id' => $datas['id']);
+        $class_id = $datas['id'];
+        unset($datas['id']);
+        $startDate = date('Y-m-d', strtotime($datas['start_date']));
+        $endDate = date('Y-m-d', strtotime($datas['end_date']));
+        $inslmntDate = date('Y-m-d', strtotime($datas['installment_start_date']));
+        $datas['modified_date'] = date('Y-m-d H:i:s');
+        $datas['start_date'] = $startDate;
+        $datas['end_date'] = $endDate;
+        $datas['installment_start_date'] = $inslmntDate;
+        if ($datas['registration_type'] == 'internal') {
+            $datas['link'] = '';
+        }
+        $datas['day_of_week'] = implode(',', $datas['day_of_week']);
+        $datas['teacher_assigned'] = implode(',', $datas['teacher_assigned']);
+        $this->dbcon->Modify('itf_class', $datas, $condition);
+        $formData = array();
+        $datas['class_id'] = $class_id;
+        $datas['form_type'] = $datas['type'];
+        $this->uploadRegForm($datas);
+    }
+
+    function Class_deleteAdmin($Id) {
+        $sql = "delete from itf_class where id in(" . $Id . ")";
+        $this->dbcon->Query($sql);
+        return $this->dbcon->querycounter;
+    }
+
+    function showAllClasslist($past = true, $txtsearch) {
+        // $past = false;
+
+        
+        $sql = "SELECT c.code,c.notes,c.id,c.code,c.status,c.loc_id,l.name as loc_name,c.day_of_week,c.teacher_assigned,c.registration_status,c.room,date(c.start_date) as start_date,
+            date(c.end_date) as end_date,c.duration,c.class_time,c.no_of_class,l.address, co.name
+FROM `itf_class` c, itf_location l,itf_course co WHERE (c.loc_id = l.id ) and (c.type=1 and co.id=c.course_id)" . $preDate . $where . $order;
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showTeacherClasslist($teacherDeatils) {
+        if ($teacherDeatils['future'] != 'yes') {
+            $preDate = ' and (date(c.start_date) <= "' . date('Y-m-d') . '" and date(c.end_date) >= "' . date('Y-m-d') . '")';
+            $order = ' order by c.day_of_week';
+        } else {
+            $preDate = ' and (date(c.start_date) > "' . date('Y-m-d') . '" )';
+
+            $order = ' order by start_date';
+        }
+        if ($teacherDeatils['type'] == 2) {
+            $where = "  and teacher_assigned in ($teacherDeatils[teacherId]) and c.type='2'";
+        } else {
+            $where = "  and teacher_assigned in ($teacherDeatils[teacherId]) and c.type='1'";
+        }
+
+        $sql = "SELECT c.code,co.name as course_name, c.id,c.registration_status,c.notes, c.code,c.start_date,c.end_date, c.status, c.loc_id, c.room, date( c.start_date ) AS start_date, date( c.end_date ) AS end_date, c.duration, c.class_time, c.no_of_class, l.address, co.name, l.name AS loc_name, l.city AS loc_city
+, c.day_of_week FROM `itf_class` c, itf_location l, itf_course co WHERE (c.loc_id = l.id )AND (co.id = c.course_id
+)" . $preDate . $where . $order;
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAllSummerCampList($past = true, $txtsearch) {
+        //  echo '<pre>';print_r($txtsearch);
+        $sql = "SELECT c.code,c.notes,c.id,c.code,c.status,c.loc_id,l.name as loc_name,c.day_of_week,c.teacher_assigned,c.registration_status,c.room,date(c.start_date) as start_date,
+            date(c.end_date) as end_date,c.duration,c.class_time,c.no_of_class,l.address, co.name
+FROM `itf_class` c, itf_location l,itf_course co WHERE (c.loc_id = l.id ) and (c.type=2 and co.id=c.course_id)" . $preDate . $where . $order;
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAlllinkCat() {
+        $sql = "SELECT id,link_type FROM `itf_link_type` where status='1'";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAllCourse1() {
+        $sql = "SELECT id,code,name FROM `itf_course` where status='1'";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAllLocation($parentid = "0") {
+        $sql = "SELECT id,code,name,address FROM `itf_location` where status='1'";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAllCourselist() {
+        $sql = "select * from itf_course  where status='1' ";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAllTeacherlist() {
+        $sql = "select id,first_name,last_name,email from itf_teachers where status='1'";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function ShowAllCourseSearch($txtsearch) {
+        $sql = "select * from itf_course where  name like ( '%" . $this->dbcon->EscapeString($txtsearch) . "%')";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function showAllClass($parentid = "0") {
+        $sql = "select S.*,(select count(*) from itf_class where parentid=S.id) as totalcity from itf_class S where S.parentid='" . $parentid . "' ";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function CheckClass($UsId) {
+        $sql = "select U.* from itf_class U where U.id='" . $UsId . "'";
+        return $this->dbcon->Query($sql);
+    }
+
+    //Function for change status	
+    function PublishBlock($ids) {
+        $infos = $this->CheckState($ids);
+        if ($infos['status'] == '1')
+            $datas = array('status' => '0');
+        else
+            $datas = array('status' => '1');
+
+        $condition = array('id' => $ids);
+        $this->dbcon->Modify('itf_course', $datas, $condition);
+        return ($infos['status'] == '1') ? "0" : "1";
+    }
+
+    function getAllStateFront($parentid = "0") {
+        $sql = "select *  from itf_course where status='1' and parentid='" . $parentid . "' order by name ";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function getStudentCount($classId) {
+        $sql = "SELECT id FROM `itf_student` WHERE class_id ='$classId' ";
+        $countTot = count($this->dbcon->FetchAllResults($sql));
+        return $countTot;
+    }
+
+    function getStudentStatus($classId, $statusID) {
+        $sql = "SELECT id FROM `itf_student` WHERE (class_id ='$classId' and reg_status='$statusID')";
+        $countTot = count($this->dbcon->FetchAllResults($sql));
+        return $countTot;
+    }
+
+    function getStudentCountDetail($classId) {
+
+        $sql = "SELECT s.status_name, s.id, count( c.id ) AS student_total FROM `itf_student` c, `itf_student_status` s WHERE (
+c.reg_status = s.id AND c.class_id  ='$classId') GROUP BY s.id, s.status_name  ";
+        return $this->dbcon->FetchAllResults($sql);
+    }
+
+    function getDayofweek($ids) {
+        $days = explode(',', $ids);
+        $weekArrays = array('1' => 'Monday', '2' => 'Tuesday', '3' => 'Wednesday', '4' => 'Thursday', '5' => 'Friday', '6' => 'Saturday', '7' => 'Sunday');
+        $i = 0;
+        foreach ($weekArrays as $key => $value) {
+            if ($key == $days[$i]) {
+                $val.=$value . '<br/>';
+                $i++;
+            }
+        }
+        return $val;
+    }
+
+    function getClasRegistrationStaus($registrationId) {
+        $i = 0;
+        foreach ($weekArrays as $key => $value) {
+            if ($key == $registrationId) {
+                $val.=$value;
+                $i++;
+            }
+        }
+        return $val;
+    }
+
+    function getClassTeacherNames($teacherIDS) {
+        //  $days = explode(',', $ids);
+        $sql = "SELECT id,first_name,last_name from itf_teachers where id in ($teacherIDS)";
+        $countTot = $this->dbcon->FetchAllResults($sql);
+        foreach ($countTot as $value) {
+
+            $val.=$value['first_name'] . ' ' . $value['last_name'] . '<br/>';
+        }
+        return $val;
+    }
+
+    function getClassStudtenListing($classDetail) {
+        //   echo '<pre>';print_r($classDetail);
+
+        $sql = "SELECT s.id,s.class_id,c.id as ori_class_id,c.code as class_code,c.course_id,c.teacher_assigned,c.start_date,c.end_date,concat (s.first_name,' ',s.last_name) as student_name,c.loc_id,c.end_date FROM itf_student s, itf_class c WHERE"
+                . " (c.id ='" . $classDetail['classId'] . "' and c.teacher_assigned in(" . $classDetail[teacherId] . ") ) and ( s.class_id=c.id)";
+        $countTot = $this->dbcon->FetchAllResults($sql);
+        return $countTot;
+    }
+
+    function getGradeClassSearch($gradeIds) {
+        $sql = "SELECT c.id as class_id,c.loc_id,l.id as location_id,l.address,l.city,l.state,l.zip,l.latitude,l.longitude"
+                . " FROM  itf_class c,itf_location l WHERE"
+                . " (c.start_eligibility ='$gradeIds' or c.end_eligibility ='$gradeIds' ) and ( c.loc_id=l.id and c.type='1')";
+        $countTot = $this->dbcon->FetchAllResults($sql);
+        return $countTot;
+    }
+
+    function getGradeSummerCampSearch($gradeIds) {
+        $sql = "SELECT c.id as class_id,c.loc_id,l.id as location_id,l.address,l.city,l.state,l.zip,l.latitude,l.longitude"
+                . " FROM  itf_class c,itf_location l WHERE"
+                . " (c.start_eligibility ='$gradeIds' or c.end_eligibility ='$gradeIds' ) and ( c.loc_id=l.id and c.type='2')";
+        $countTot = $this->dbcon->FetchAllResults($sql);
+        return $countTot;
+    }
+
+    function getClassListFrontend($searchCriteria) {
+        //start_eligibility end_eligibility 
+        $sql = "SELECT c.id as class_id,co.name as course_name,c.code as class_code,c.start_date,c.end_date,c.room,c.day_of_week,c.loc_id,l.name as loc_name,l.id as location_id,l.address,l.city,c.day_of_week,c.start_eligibility,"
+                . "c.end_eligibility,c.no_of_class,c.duration,c.class_time FROM  itf_class c,itf_location l,itf_course co  WHERE co.id=c.course_id and "
+                . " (date(c.end_date) > '" . date('Y-m-d') . "' and c.type='$searchCriteria[type]') and ( c.loc_id=l.id and c.status='1'  $cityCheck)
+            order by l.city,c.end_date";
+        $countTot = $this->dbcon->FetchAllResults($sql);
+        return $countTot;
+    }
+
+    function getGradeDesc($gradeId) {
+        $sql = "select id,grade_desc  from itf_grade where status='1' and id='" . $gradeId . "' order by id desc ";
+        return $this->dbcon->Query($sql);
+    }
+
+    function getClassListDetails($classId, $type) {
+        $sql = "SELECT c.id as class_id,c.installment_booking_amt,c.installment_amt,c.no_of_installment,"
+                . "c.installment_start_date,  c.course_id,c.registration_type,c.link,c.code,c.start_date,c.type,c.end_date,c.room,c.day_of_week,c.loc_id,l.id as location_id,l.address,l.city,c.day_of_week,c.start_eligibility,"
+                . "c.end_eligibility,c.no_of_class,c.class_time,c.notes,c.installment_start_date ,c.duration,c. installment_amt,c.installment_booking_amt,c.installment_amt,c.no_of_installment,l.name as loc_name, l.state,l.zip,c.single_pay_amt FROM  itf_class c,itf_location l WHERE"
+                . " ( date(c.end_date) > '" . date('Y-m-d') . "' and c.type='$type') and ( c.loc_id=l.id and c.status='1' and c.id='$classId')
+            ";
+        $countTot = $this->dbcon->Query($sql);
+        return $countTot;
+    }
+
+    function checkActiveClass($classId) {
+        $sql = "SELECT c.id as class_id,c.start_date,c.end_date,c.room,c.day_of_week,c.loc_id,l.id as location_id,l.address,l.city,c.day_of_week,c.start_eligibility,"
+                . "c.end_eligibility,c.no_of_class,c.duration,c.teacher_assigned FROM  itf_class c,itf_location l WHERE"
+                . " (date(c.start_date) <='" . date('Y-m-d') . "' and date(c.end_date) > '" . date('Y-m-d') . "' and c.id='$classId') and ( c.loc_id=l.id and c.status='1')
+            ";
+        $countTot = $this->dbcon->Query($sql);
+        return $countTot;
+    }
+
+    function uploadRegForm($datas) {
+
+        if (isset($_FILES['bannerimage']['name']) and !empty($_FILES['bannerimage']['name'])) {
+            $sql = "delete from itf_registration_form where class_id in(" . $datas['class_id'] . ")";
+            $this->dbcon->Query($sql);
+            $datas['created_date'] = date('Y-m-d H:i:s');
+            $datas['modified_date'] = date('Y-m-d H:i:s');
+            @unlink(PUBLICFILE . "registration_form/" . "Reg_" . $datas['class_id'] . '_' . $datas['form_type']);
+            $fimgname = "Reg_" . $datas['class_id'] . '_' . $datas['form_type'] . '.' . $extension;
+            $allowedExts = array("pdf", "doc", "docx");
+            $extension = end(explode(".", $_FILES["bannerimage"]["name"]));
+            $fimgname = "Reg_" . $datas['class_id'] . '_' . $datas['form_type'] . '.' . $extension;
+            if ($extension == "pdf" || $extension == "doc") {
+                move_uploaded_file($_FILES["bannerimage"]["tmp_name"], PUBLICFILE . "registration_form/" . "Reg_" . $datas['class_id'] . '_' . $datas['form_type'] . '.' . $extension);
+            } else {
+                echo "Invalid file.";
+                exit;
+            }
+            $datas['name'] = $fimgname;
+
+            $this->dbcon->Insert('itf_registration_form', $datas);
+        }
+    }
+
+    function getCourseDetails($Id) {
+        $sql = "select id,code,name,description from itf_course where (status='1' and id='" . $Id . "') order by id desc ";
+        return $this->dbcon->Query($sql);
+    }
+
+    function getFormName($classId) {
+        $sql = "select id,name,form_name  from itf_registration_form where (status='1' and class_id='" . $classId . "') order by id desc ";
+        return $this->dbcon->Query($sql);
+    }
+
+    function getClassRegistrationStatusName($regStatusId) {
+        // echo substr($topicIds,0,-1);
+        $regStatusArray = explode(',', $regStatusId);
+        foreach ($statusArray as $key => $value) {
+            if (in_array($key, $regStatusArray)) {
+                $val .= $value . '<br/><br/>';
+            }
+        }
+        return $val;
+    }
+
+}
+?>
+

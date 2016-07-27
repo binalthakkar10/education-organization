@@ -1,0 +1,158 @@
+body {margin:0px; padding:0px; background:#FBFBFB;}
+.itfok{background:url(../imgs/itfok.png); padding-left:14px; margin-left:5px;}
+
+.mainbodys{margin:120px auto 0 auto; width:330px;}
+
+#login-box {
+
+	width:265px;
+
+	height:auto;
+
+	padding: 15px 35px 10px 15px;
+
+	font: 12px Arial, Helvetica, sans-serif;
+
+	border:1px solid #999;
+
+	background:#FFFFFF;
+
+	text-align:left;
+
+}
+
+
+
+#login-box img {
+
+	border:none;
+
+}
+
+
+
+#login-box h2 {
+
+	padding:0;
+
+	margin:0;
+
+	color: #ebebeb;
+
+	font: bold 44px "Calibri", Arial;
+
+	text-align:left;
+
+}
+
+
+
+
+
+#login-box-name {
+
+	float: left;
+
+	display:inline;
+
+	width:80px;
+
+	text-align: right;
+
+	padding: 14px 10px 0 0;
+
+	margin:0 0 7px 0;
+
+}
+
+
+
+#login-box-field {
+
+	float: left;
+
+	display:inline;
+
+	width:230px;
+
+	margin:0;
+
+	margin:0 0 7px 0;
+
+}
+
+
+
+
+
+.form-login  {
+
+	width: 100%;
+
+	padding: 3px 4px 6px 3px;
+
+	border: 1px solid #0d2c52;
+
+	background-color:#FBFBFB;
+
+	font-size: 16px;
+
+	color:#000000;
+
+}
+
+
+
+
+
+.login-box-options  {
+
+	clear:both;
+
+	padding-left:87px;
+
+	font-size: 11px;
+
+}
+
+
+
+.login-box-options a {
+
+	color: #ebebeb;
+
+	font-size: 11px;
+
+}
+
+.errormsg{color:#FF0000; font-size:14px; text-align:center;}
+
+.msgs{border:1px solid #CC0000; color:#000000; background:#FFEBE8; width:300px; margin:0 0 10px 0px; padding:0px 10px;}
+.msg{border:1px solid #006600; color:#000000; background: #D7F3D6; width:300px; margin:0 0 10px 0px; padding:10px;}
+
+
+.logos {
+    background: url(../imgs/logos.png) no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 12px;
+    padding: 45px 0 13px;
+    text-align: center;
+    width: 320px;
+}
+
+label.error {color:#F00;}
+
+.formminp {
+    background: url(imgs/iput_bg.png) no-repeat scroll left top transparent;
+    border: 1px solid #D6D8DB;
+    border-radius: 5px 5px 5px 5px;
+    color: #020202;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 5px 2px 6px 5px;
+    text-decoration: none;
+    width: 246px;
+}

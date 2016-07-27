@@ -1,0 +1,321 @@
+[16-Jul-2014 06:00:13 Asia/Calcutta] PHP Notice:  Undefined index: name in /home/askhuran/public_html/beta/includes/classes/User.class.php on line 35
+[16-Jul-2014 06:00:29 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:29 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:29 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:29 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:29 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:29 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:33 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:33 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:33 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:33 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:33 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:00:33 Asia/Calcutta] PHP Notice:  Array to string conversion in /home/askhuran/public_html/beta/includes/classes/Mysql.class.php on line 716
+[16-Jul-2014 06:33:59 Asia/Calcutta] PHP Notice:  Undefined variable: ItfInfoData in /home/askhuran/public_html/beta/admin/module/mod_class/view/add.php on line 164
+[16-Jul-2014 06:33:59 Asia/Calcutta] PHP Notice:  Undefined variable: dropdownClass in /home/askhuran/public_html/beta/admin/module/mod_class/view/add.php on line 170
+[16-Jul-2014 06:33:59 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/askhuran/public_html/beta/admin/module/mod_class/view/add.php on line 170
+[16-Jul-2014 06:33:59 Asia/Calcutta] PHP Notice:  Undefined variable: link in /home/askhuran/public_html/beta/admin/module/mod_class/view/add.php on line 300
+[16-Jul-2014 06:33:59 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/askhuran/public_html/beta/admin/module/mod_class/view/add.php on line 300
+[04-Aug-2014 09:52:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:52:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:33 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:53:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:04 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:04 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:04 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:04 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:10 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:10 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[04-Aug-2014 09:54:10 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:32:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:32:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:32:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:32:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:36:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:36:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:36:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Aug-2014 09:36:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:18:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:18:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:18:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:18:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:31:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:31:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:31:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:31:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:33:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:33:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:33:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:33:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:36:59 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:36:59 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:36:59 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:36:59 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:37:16 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:37:16 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:37:16 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:49:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:49:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:49:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[15-Aug-2014 08:49:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 11:34:19 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 11:34:19 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 11:34:19 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 11:34:19 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:23 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:23 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:23 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:23 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:34 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:45 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:45 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:45 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:51 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:51 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:01:51 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:06:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:06:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:06:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:06:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:07:20 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:07:20 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[18-Aug-2014 14:07:20 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[06-Oct-2014 09:02:15 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[09-Oct-2014 10:22:26 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:22:26 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:22:26 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:23:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:23:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:23:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:23:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:25:22 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:25:22 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:25:22 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:26:05 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:26:05 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:26:05 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:26:05 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:27:12 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:27:12 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:27:12 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:39:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:39:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:39:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[09-Oct-2014 10:39:03 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:13:46 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[02-Nov-2014 11:14:36 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[02-Nov-2014 11:20:40 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:20:40 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:20:40 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:20:53 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:20:53 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:20:53 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:00 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:00 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:00 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:24 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:24 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:24 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:44 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:44 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:44 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:51 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:51 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[02-Nov-2014 11:21:51 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[03-Nov-2014 12:54:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[03-Nov-2014 12:54:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[03-Nov-2014 12:54:52 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[03-Nov-2014 12:54:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[03-Nov-2014 12:54:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[03-Nov-2014 12:54:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:16 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:16 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:16 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:28 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:28 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:28 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:37 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:37 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:37 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:45 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:45 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Dec-2014 13:02:45 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[12-Jan-2015 12:19:46 America/Los_Angeles] MySQL_class: Error in index.php: Query('select * from itf_siteinfo where id='1'') failed! (Lost connection to MySQL server during query)
+[12-Jan-2015 12:19:46 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:19:46 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:19:46 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:19:46 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:19:46 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:19:48 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:19:59 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:20:15 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:20:21 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:20:39 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:20:56 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:21:25 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:21:46 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:21:49 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:21:54 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:21:59 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:05 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:19 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:22 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:23 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:25 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:39 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:43 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:22:47 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:23:10 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:23:49 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:24:08 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:25:09 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:25:58 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:26:19 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:29:14 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:32:36 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[12-Jan-2015 12:33:32 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[13-Jan-2015 11:30:27 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Access denied for user 'shahdeep_ankit'@'localhost' (using password: YES))
+[18-Jan-2015 12:15:49 America/Los_Angeles] MySQL_class: Error in itfmain.php: Query('INSERT INTO itf_image_gallery (created_date,modified_date,name,image_desc,album_id,image_name) VALUES('2015-01-18 12:15:31','2015-01-18 12:15:31','admin','veaae','','')') failed! (Cannot add or update a child row: a foreign key constraint fails (`trade2ri_bayareadebate`.`itf_image_gallery`, CONSTRAINT `itf_image_gallery_ibfk_1` FOREIGN KEY (`album_id`) REFERENCES `itf_album` (`id`)))
+[04-Feb-2015 13:56:40 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[04-Feb-2015 13:56:44 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[04-Feb-2015 13:57:47 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[04-Feb-2015 13:58:03 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[04-Feb-2015 13:58:07 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Too many connections)
+[04-Feb-2015 14:03:39 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Too many connections)
+[10-Feb-2015 13:57:49 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[10-Feb-2015 13:58:18 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[10-Feb-2015 14:00:49 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[23-Mar-2015 12:44:15 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[23-Mar-2015 14:25:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:40 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:40 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:40 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:47 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:55 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:55 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[23-Mar-2015 14:25:55 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[22-Apr-2015 16:01:43 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[22-Apr-2015 16:01:47 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Jul-2015 23:33:39 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Jul-2015 23:33:39 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Jul-2015 23:33:39 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Jul-2015 23:33:56 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Jul-2015 23:33:56 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Jul-2015 23:33:56 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:09:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:09:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:09:32 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:10:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:10:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:10:08 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:00 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:00 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:00 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:13 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:13 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:13 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Jul-2015 17:11:49 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jul-2015 18:40:03 America/Los_Angeles] MySQL_class: Error in index.php: Query('select * from itf_users where username='ÿþ<script>alert(203)</script>' and 	password ='d41d8cd98f00b204e9800998ecf8427e' and user_type='1'') failed! (Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=')
+[24-Jul-2015 14:16:04 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[24-Jul-2015 14:16:09 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:50:16 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:50:41 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:51:10 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:51:27 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:51:31 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:51:41 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:51:59 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:52:34 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:52:49 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:54:07 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:54:17 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:54:54 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 10:57:14 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:31:24 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:31:31 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:32:12 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:32:27 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:33:05 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:33:26 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:37:07 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:37:34 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:37:49 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:40:27 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:40:49 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:40:53 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:41:47 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:45:09 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:45:26 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 11:45:34 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 12:02:57 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 12:02:59 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 12:03:00 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 12:03:01 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 12:41:16 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 12:43:19 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 13:10:01 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[27-Jul-2015 13:20:49 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('SELECT id,first_name,last_name from itf_teachers where id in (,1,2,3)') failed! (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3)' at line 1)
+[01-Sep-2015 13:21:50 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Sep-2015 13:41:47 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Sep-2015 13:41:50 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Sep-2015 13:41:56 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Sep-2015 13:42:01 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[07-Sep-2015 11:12:39 America/Los_Angeles] MySQL_class: Error in itfmain.php: QueryResult('select *  from itf_student_status where status = '1'') failed! (Lost connection to MySQL server during query)
+[20-Oct-2015 13:42:42 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[20-Oct-2015 13:42:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[20-Oct-2015 13:42:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[20-Oct-2015 13:42:43 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[27-Oct-2015 12:37:21 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[27-Oct-2015 12:37:32 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[08-Jan-2016 14:31:21 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[08-Jan-2016 14:31:21 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[08-Jan-2016 14:31:21 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jan-2016 11:11:13 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jan-2016 11:11:13 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jan-2016 11:11:13 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jan-2016 11:11:36 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jan-2016 11:11:36 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[13-Jan-2016 11:11:36 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Feb-2016 14:06:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Feb-2016 14:06:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Feb-2016 14:06:07 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Feb-2016 14:06:15 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Feb-2016 14:06:15 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[01-Feb-2016 14:06:15 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[10-Feb-2016 13:06:00 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[10-Feb-2016 13:11:02 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[10-Feb-2016 13:11:53 America/Los_Angeles] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 19712 bytes) in /home/askhuran/public_html/includes/classes/ITFImageResize.class.php on line 15
+[01-Mar-2016 23:08:09 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Mar-2016 23:08:12 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Mar-2016 23:08:17 America/Los_Angeles] MySQL_class: Error in itfmain.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Mar-2016 23:08:18 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[01-Mar-2016 23:08:21 America/Los_Angeles] MySQL_class: Error in index.php: Connect(): Connection to localhost failed! (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2))
+[29-Apr-2016 14:07:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[29-Apr-2016 14:07:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716
+[29-Apr-2016 14:07:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /home/askhuran/public_html/includes/classes/Mysql.class.php on line 716

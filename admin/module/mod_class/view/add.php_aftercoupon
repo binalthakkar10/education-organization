@@ -1,0 +1,422 @@
+<?php
+#error_reporting(E_ALL);
+#ini_set('display_errors', 'On');
+if (isset($_POST['id'])) {
+    $userids = $_POST['id'];
+    if (!empty($_POST['id'])) {
+
+        $obj->admin_updateClass($_POST);
+        flash($pagetitle . " is successfully Updated");
+    } else {
+        $obj->admin_addClass($_POST);
+        flash($pagetitle . " is successfully added");
+    }
+    $urlname = CreateLinkAdmin(array($currentpagenames, "parentid" => $parentids));
+    redirectUrl($urlname);
+}
+$ids = isset($_GET['id']) ? $_GET['id'] : '';
+$InfoData = $obj->CheckClass($ids);
+$categoryobj = new Category();
+$course = $obj->showAllCourse1();
+$location = $obj->showAllLocation();
+$tech = $obj->showAllTeacherlist();
+$gradeObj = new Grade();
+$gradesList = $gradeObj->showAllActiveGrade();
+//echo '<pre>';print_r($gradesList);
+$getCoupon = new Coupon;
+$couponList = $getCoupon->ClassCoupon();
+$InfoFiledata = $obj->getFormName($ids);
+$InfoDataCoupon = $getCoupon->CouponClassData($ids);
+//echo '<pre>';print_r($InfoDataCoupon);
+?>
+<script type="text/javascript">
+    $(document).ready(function() {
+        jQuery.validator.addMethod("greaterThan",
+                function(value, element, params) {
+                    document.getElementById("required_end_date").style.display = "none";
+
+                    var target = $(params).val();
+                    var isValueNumeric = !isNaN(parseFloat(value)) && isFinite(value);
+                    var isTargetNumeric = !isNaN(parseFloat(target)) && isFinite(target);
+                    if (isValueNumeric && isTargetNumeric) {
+                        //document.getElementById("required_end_date").style.display = "block";
+                        // alert(Number(value) + ' ' + Number(target))
+                        return Number(value) > Number(target);
+                    }
+
+                    if (!/Invalid|NaN/.test(new Date(value))) {
+
+                        if (new Date(value) < new Date(target))
+                        {
+                            // document.getElementById("required_end_date").style.display = "block";
+                            // alert(new Date(value) + ' ' + new Date(target))
+                        }
+                        else
+                        {
+                            //document.getElementById("required_end_date").style.display = "none";
+
+                        }
+                        return new Date(value) > new Date(target);
+                    }
+                    // document.getElementById("required_end_date").style.display = "none";
+
+                    return false;
+                }, 'Must be greater than Start Date.');
+        $("#itffrminput").validate({
+        rules: {
+        room: "required",
+                code: "required",
+                loc_id: "required",
+                course_id: "required",
+                start_date: "required",
+                end_date: {
+                required: true,
+                        greaterThan: "#start_date"
+                },
+                "day_of_week[]": "required",
+                class_time: "required",
+                duration: "required",
+                no_of_class: {
+                required: true,
+                        number: true
+                },
+                start_eligibility: "required",
+                end_eligibility: "required",
+                notes: "required",
+                single_pay_amt: {
+                required: true,
+                        number: true
+                },
+                installment_booking_amt: {
+                number: true
+                },
+                installment_amt: {
+                number: true
+                },
+                no_of_installment: {
+                number: true
+                },
+                "teacher_assigned[]": "required"
+<?php if ($ids == '') { ?>
+            ,
+                    bannerimage: {
+                    required: true,
+                            accept: "pdf|doc"
+                    },
+<?php } ?>
+        }
+        });
+    });
+</script>
+
+<div class="full_w">
+    <!-- Page Heading -->
+    <div class="h_title"><?php
+        echo ($ids == "") ? "Add New " : "Edit ";
+        echo $pagetitle;
+        ?></div>
+    <!-- Page Heading -->
+
+    <form action="" method="post" name="itffrminput" id="itffrminput" enctype="multipart/form-data">
+        <input name="id" type="hidden" id="id" value="<?php echo!empty($InfoData['id']) ? $InfoData['id'] : ''; ?>" />
+        <input name="type" type="hidden" id="type" value="1" />
+        <div class="element">
+            <label> Room<span class="red">(required)</span></label>
+            <input class="field size1"  name="room" type="text"  id="room" size="35" value="<?php echo isset($InfoData['room']) ? $InfoData['room'] : '' ?>" />
+        </div>
+
+        <div class="element">
+            <label> Class Code<span class="red">(required)</span></label>
+            <input class="field size1"  name="code" type="text"  id="class_code" size="35" value="<?php echo isset($InfoData['code']) ? $InfoData['code'] : '' ?>" />
+        </div>
+
+        <div class="element">
+            <label>Location Name<span class="red">(required)</span></label>
+            <select name="loc_id" id="location_code" class="err">
+                <option value="">-- Select Location Name--</option>
+                <?php foreach ($location as $loc) { ?>
+                    <option value="<?php echo $loc['id'] ?>" <?php
+                    if ($loc['id'] == $InfoData["loc_id"]) {
+                        echo"selected";
+                    } echo '>' . ucfirst($loc['code'] . ' - ' . $loc['name'])
+                    ?></option><?php } ?>
+            </select>            
+        </div>
+
+        <div class="element">
+            <label>Course Code<span class="red">(required)</span></label>
+            <select name="course_id" id="course_code" class="err">
+                <option value="">-- select Course Code--</option>
+                <?php foreach ($course as $courseCode) { ?>
+                    <option value="<?php echo $courseCode['id'] ?>" <?php
+                    if ($courseCode['id'] == $InfoData['course_id']) {
+                        echo"selected";
+                    }
+                    ?>><?php echo ucfirst($courseCode['code']) . ' - ' . $courseCode['name']; ?></option>
+                        <?php } ?>
+            </select>
+        </div>   
+
+
+
+        <!-- <div class="element">           
+        <?php
+//echo "<pre>";
+//print_r($dropdownClass);
+        $ass_class = explode(',', $ItfInfoData['ass_class']);
+        ?>
+             <label>Class Code<span class="red">(required)</span></label>
+                 <select name="class_code" id="class_code"  tabindex="1">
+                      <option value="">---Please Select Class --- </option>
+        <?php
+        foreach ($dropdownClass as $item) {
+            $idtest = '';
+
+            // echo $classCode=$item['class_code'];
+            echo $idtest = $item['id'];
+            ?>
+                                                                                                                                                                                                 <option value="<?php echo $item['id']; ?>"   <?php if (in_array($idtest, $ass_class)) { ?>selected="selected"<?php } ?>><?php echo $item['class_code']; ?> </option>
+        <?php } ?>
+                  </select>
+          </div>    -->
+        <!--         <div class="element">
+                    <label> Class Code</label>
+                    <input class="field size1"  name="class_code" type="text"  id="class_code" size="35" value="<?php echo isset($InfoData['class_code']) ? $InfoData['class_code'] : '' ?>" />
+                </div>-->
+        <div class="element">
+            <label>Start Date <span class="red">(required)</span></label>
+            <input class="field size1 tcal" autocomplete="off" name="start_date" type="text"  id="start_date" size="35" value="<?php echo isset($InfoData['start_date']) ? date('m/d/Y', strtotime($InfoData['start_date'])) : '' ?>" />
+        </div>
+        <div class="element">
+
+            <label>End Date <span class="red">(required)</span></label>
+            <input class="field size1 tcal"   autocomplete="off" name="end_date" type="text"  id="end_date" size="35" value="<?php echo isset($InfoData['end_date']) ? date('m/d/Y', strtotime($InfoData['end_date'])) : '' ?>" />
+            <span class="red" style="display:none;" id="required_end_date">End Date shouldn't be before Start Date</span>
+        </div>
+
+
+        <div class="element">
+            <label>Day(s) of week<span class="red">(required)</span></label>
+            <?php
+            $dataday_of_week = explode(',', $InfoData['day_of_week']);
+            ?>
+            <select name="day_of_week[]" class="link_type"  id="day_of_week" size="10" multiple="multiple" tabindex="1" >
+                <option value="">--Select of week --</option>
+                <option value="1"  <?php
+                if (in_array(1, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Monday</option>
+                <option value="2" <?php
+                if (in_array(2, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Tuesday</option>
+                <option value="3" <?php
+                if (in_array(3, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Wednesday</option>
+                <option value="4" <?php
+                if (in_array(4, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Thursday</option>
+                <option value="5" <?php
+                if (in_array(5, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Friday</option>
+                <option value="6" <?php
+                if (in_array(6, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Saturday</option>
+                <option value="7" <?php
+                if (in_array(7, $dataday_of_week)) {
+                    echo 'selected="selected"';
+                }
+                ?>>Sunday</option>
+            </select> 
+
+        </div>   
+        <div class="element">
+            <label>Class Time <span class="red">(required)</span></label>           
+            <input class="field size1"  name="class_time" type="text"  id="class_time" size="35" value="<?php echo isset($InfoData['class_time']) ? $InfoData['class_time'] : '' ?>" />
+        </div>
+        <div class="element">
+            <label>Duration <span class="red">(required)</span></label>
+            <input class="field size1"  name="duration" type="text"  id="duration" size="35" value="<?php echo isset($InfoData['duration']) ? $InfoData['duration'] : '' ?>" />
+        </div>        
+        <div class="element">
+            <label>Number of Class <span class="red">(required)</span></label>
+            <input class="field size1"  name="no_of_class" type="text"  id="no_of_class" size="35" value="<?php echo isset($InfoData['no_of_class']) ? $InfoData['no_of_class'] : '' ?>" />
+        </div>
+
+        <div class="element">
+            <label>Start Eligibility <span class="red">(required)</span></label>           
+            <select name="start_eligibility" id="start_eligibility_grade"> 
+                <option value="" >Select Start Eligibility Grade</option>
+                <?php
+                foreach ($gradesList as $values) {
+                    if ($InfoData['start_eligibility'] == $values["id"]) {
+                        echo '<option value="' . $values["id"] . '" selected="selected">' . $values["grade_desc"] . '</option>';
+                    } else {
+                        echo '<option value="' . $values["id"] . '">' . $values["grade_desc"] . '</option>';
+                    }
+                }
+                ?>
+            </select>
+
+        </div>
+        <div class="element">
+            <label>End Eligibility <span class="red">(required)</span></label>
+            <select name="end_eligibility" id="end_eligibility_grade"> 
+                <option value="">Select End Eligibility Grade</option>
+                <?php
+                foreach ($gradesList as $values) {
+                    if ($InfoData['end_eligibility'] == $values["id"]) {
+                        echo '<option value="' . $values["id"] . '" selected="selected">' . $values["grade_desc"] . '</option>';
+                    } else {
+                        echo '<option value="' . $values["id"] . '">' . $values["grade_desc"] . '</option>';
+                    }
+                }
+                ?>
+            </select>
+
+        </div>
+
+        <div class="element">
+            <label>Notes <span class="red">(required)</span></label>
+            <textarea class="field size1"  name="notes"   id="notes"  rows="5" cols="30" /><?php echo isset($InfoData['notes']) ? $InfoData['notes'] : '' ?></textarea>
+        </div>        
+        <div class="element registration_type">
+            <label>Registration Type<span class="red">(required)</span></label>
+
+            <span class="nme"><input type="radio"  id="registration_type" name="registration_type"  size="35" value="internal"  <?php if ($InfoData['registration_type'] == 'internal' || empty($InfoData['id'])) { ?>checked="checked"<?php } ?> ><label class="r_nme">Internal</label> </span>      
+            <div style="clear:both;"></div>
+            <span class="nme"> <input type="radio"  id="registration_type" name="registration_type"  size="35" value="external" <?php if ($InfoData['registration_type'] == 'external') { ?>checked="checked"<?php } ?>><label class="r_nme">External</label></span> 
+            <div style="clear:both;"></div>        
+            <!--<select name="registration_type" class="link_type"  id="registration_type">
+                        <option value="">--link Type --</option>
+            <?php foreach ($link as $linkType) { ?>
+                                                                                                                                                                                        <option value="<?php echo $linkType['link_type'] ?>" <?php
+                if ($linkType['id'] == $InfoData["id"]) {
+                    echo"selected";
+                }
+                ?>><?php echo $linkType['link_type']; ?></option>
+            <?php } ?>           
+                    </select> -->
+            <!--<input type="text" id="link" name="link" <?php if ($InfoData['registration_type'] != 'external') { ?>style="display:none" <?php } ?> size="35" value="<?php echo isset($InfoData['link']) ? $InfoData['link'] : '' ?>">-->           
+        </div>   
+        <div class="element" id="external" <?php if ($InfoData['registration_type'] != 'external') { ?>style="display:none" <?php } ?>>
+
+
+            <label>External Url</label>
+
+            <input type="text" id="link" name="link" size="35" value="<?php echo isset($InfoData['link']) ? $InfoData['link'] : '' ?>">
+        </div>
+        <div class="element">
+            <label>Single Payment ($)</label>
+            <input class="field size1"  name="single_pay_amt" type="text" id="single_pay_amt" size="35" value="<?php echo isset($InfoData['single_pay_amt']) ? $InfoData['single_pay_amt'] : '' ?>" />
+        </div>
+
+        <div class="element">
+            <label>Installments Booking Amount ($)</label>
+            <input class="field size1"  name="installment_booking_amt" type="text" id="installment_booking_amt" size="35" value="<?php echo isset($InfoData['installment_booking_amt']) ? $InfoData['installment_booking_amt'] : '' ?>" />
+        </div>   
+
+        <div class="element">
+            <label>installment amount ($)</label>
+            <input class="field size1"  name="installment_amt" type="text"  id="installment_amt" size="35" value="<?php echo isset($InfoData['installment_amt']) ? $InfoData['installment_amt'] : '' ?>" />
+        </div>
+        <div class="element">
+            <label>Number of Installment ($)</label>
+            <input class="field size1"  name="no_of_installment" type="text"  id="no_of_installment" size="35" value="<?php echo isset($InfoData['no_of_installment']) ? $InfoData['no_of_installment'] : '' ?>" />
+        </div>
+        <div class="element">
+            <label>Installment Start Date</label>
+            <input class="field size1 tcal" autocomplete="off"  name="installment_start_date" type="text"  id="installment_start_date" size="35" value="<?php echo isset($InfoData['installment_start_date']) ? date('m/d/Y', strtotime($InfoData['installment_start_date'])) : '' ?>" />
+        </div>
+
+        <div class="element">
+            <label>Registration Status</label>
+            <select name="registration_status" id="registration_status" >
+                <option value="1" <?php if ($InfoData['registration_status'] == '1') { ?> selected="selected" <?php } ?>>Scheduled and Confirmed</option>
+                <option value="2" <?php if ($InfoData['registration_status'] == '2') { ?> selected="selected" <?php } ?>>Cancelled</option>
+                <option value="3" <?php if ($InfoData['registration_status'] == '3') { ?> selected="selected" <?php } ?>>Scheduled but not yet confirmed</option>
+                <option value="4" <?php if ($InfoData['registration_status'] == '4') { ?> selected="selected" <?php } ?>>Scheduled and likely to get confirmed</option>
+            </select>
+        </div>
+
+        <?php //echo $InfoData['id'];    ?>
+        <?php
+        $datateacher_assigned = explode(',', $InfoData['teacher_assigned']);
+        ?>
+        <div class="element">                       
+            <label>Teacher Assigned</label>       
+            <select name="teacher_assigned[]" id="teacher_assigned" class="err" size="10" multiple="multiple" tabindex="1">
+                <option value="">---Please Select Teacher----</option>
+                <?php foreach ($tech as $techList) { ?> 
+                    <option value="<?php echo $techList['id'] ?>" <?php if (in_array($techList['id'], $datateacher_assigned)) echo "selected"; ?>>  <?php echo $techList['first_name'] . '&nbsp;' . $techList['last_name']; ?> </option>
+                <?php } ?>
+            </select>
+       <!--<input class="field size1"  name="teacher_assigned" type="text"  id="teacher_assigned" size="35" value="<?php echo isset($InfoData['teacher_assigned']) ? $InfoData['teacher_assigned'] : '' ?>" />-->
+        </div>  
+        <div class="element">
+            <label> Upload Registration Form <span class="red">*</span></label>
+            <div id="FileUpload">
+                <input type="file" size="24" id="bannerimage" name="bannerimage" class="BrowserHidden"  />
+                <div id="BrowserVisible">
+                    <?php if ($InfoFiledata['name']) { ?>
+                        <div class="display"> <a href="<?php echo SITEURL . "/itf_public/registration_form/" . $InfoFiledata['name'] ?>" target="blank" ><?php echo $InfoFiledata['name'] ?></a> </div>
+                    <?php } //$InfoFiledata?>
+                </div>
+            </div>
+        </div>
+        
+        <div class="element">
+            <label>Coupon <span class="red"></span></label>           
+            <select name="coupon_applied"> 
+                <option value="" >--Select Coupon--</option>
+                <?php
+                foreach ($couponList as $values) {
+                    if ($InfoDataCoupon[0]['coupon_id'] == $values["id"]) {
+                        echo '<option value="' . $values["id"] . '" selected="selected">' . $values["name"] .'('.$values["code"].') </option>';
+                    } else {
+                        echo '<option value="' . $values["id"] . '">'. $values["name"] .'('.$values["code"].')</option>';
+                    }
+                }
+                ?>
+            </select>
+
+        </div>
+        
+        <!--              Form Buttons -->
+        <div class="entry">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="history.back()">Back</button>
+        </div>
+        <!-- End Form Buttons -->
+    </form>
+    <!-- End Form -->
+</div>
+<script>
+    $(document).ready(function() {
+        $('.registration_type input#registration_type').click(function(e) {
+
+            var value = $(this).val();
+            //alert(value);
+
+            if (value == 'external') {
+                $('#external').show();
+
+            } else {
+                $('#external').hide();
+            }
+
+
+        })
+
+    })
+</script>

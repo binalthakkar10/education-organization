@@ -1,0 +1,264 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+msg_container {
+    margin-bottom: 10px;
+}
+
+h2 
+{
+	font-size: 18pt; 
+	color: #000;
+	margin: 20px 0px;
+}
+
+.message {
+    background: #B7DF63;
+    font-family: "Lucida Grande", "Lucida Sans Unicode"; 
+    font-size: 9pt;
+    color: #000;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.error {
+    background: #FF0000;
+    color: #FFF;
+}
+
+.filter,
+.create {
+    background: #18191D;
+    font-family: "Lucida Grande", "Lucida Sans Unicode"; 
+    font-size: 9pt;
+    color : #fff;
+    padding: 5px;
+}
+
+.filter {
+    border-top: 1px solid #FFF;
+}
+
+.filter input {
+    border-width:0;
+    font-family:"Lucida Grande", "Lucida Sans Unicode";
+    font-size:9pt;
+    padding:2px;
+    width:219px;
+    margin-right: 5px;
+}
+
+.filter .submit {
+    color: #FFF;
+    background: #000;
+    padding: 2px 3px 2px 3px;
+    width: auto;
+    cursor: pointer;
+    margin-right: 0px;
+    border: 1px solid #FFF;
+    font-size: 8pt;
+}
+
+.smoothcalendareditor {
+    font-family: "Lucida Grande", "Lucida Sans Unicode"; 
+    position: relative;
+    color : #fff;
+    margin-top: 20px;
+}
+
+.calendar_item {
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.calendar_item_titlebar {
+    background: #18191D;
+    padding: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.calendar_item_date {
+    font-size: 8pt;
+    color: #318DF2;
+    margin-left: 8px;
+}
+
+.calendar_item_link {
+    outline: none;
+    font-size: 9pt;
+    color: #fff;
+    text-decoration: none;
+    margin: 3px 3px 3px 5px;
+}
+
+.calendar_item_editlink:hover {
+    color: #000;
+}
+
+.calendar_item_content {
+    font-size: 9pt;
+    background: #318DF2;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.calendar_item_content p {
+    margin: 0px;
+    padding: 5px;    
+}
+
+.calendar_item_links {
+    text-align: right;
+    border-top: 1px solid #FFF;
+    padding-right: 5px;
+}
+
+.calendar_item_edit {
+    border-top: 1px solid #fff;
+    background: #318DF2;
+    padding: 5px;
+}
+
+.create p,
+.calendar_item_edit p {
+    margin-top: 3px;
+    line-height: 1em;
+}
+
+.calendar_item_edit label{
+    font-size: 9pt;
+    margin-right: 15px;
+}
+
+.create .input_title,
+.create .input_date,
+.create .input_content,
+.calendar_item_edit input, 
+.calendar_item_edit textarea{
+    border-width: 0px;
+    padding: 2px;
+    width: 219px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode";
+    font-size: 9pt;
+}
+
+.create .input_content,
+.calendar_item_edit textarea{
+    height: 120px;
+    width: 686px;
+}
+
+#create_submit_button,
+#create_reset_button,
+.delete_button, 
+.cancel_button, 
+.submit_button {
+    font-family: "Lucida Grande", "Lucida Sans Unicode";
+    background: #000;
+    padding: 3px 5px;
+    margin-left: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 8pt;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    border-top: none;
+}
+
+#create_submit_button:hover,
+#create_reset_button:hover,
+.filter .submit:hover,
+.cancel_button:hover, 
+.submit_button:hover {
+    color: #318DF2;
+}
+
+.datepicker {
+    font-family: "Lucida Grande", "Lucida Sans Unicode"; 
+    text-transform: uppercase;
+    font-size: 9pt;
+    background-color: #000;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    display: none;
+    border: 3px solid #000;
+    padding-bottom: 5px;
+    border: 1px solid #FFF;
+}
+
+.datepicker .columns{
+    width: 25px;
+    float: left;
+    margin-left: 1px;
+}
+
+.datepicker .dayNames {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 3px;
+    padding: 3px 0px 3px 0px;
+}
+
+.datepicker .emptyBox,
+.datepicker .dayBox {
+    color: #FFF;
+    line-height: 1em;
+    overflow: hidden;
+    padding: 4px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.datepicker .dayBox {
+    background-color: #318DF2;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.datepicker .dayBox:hover {
+    background: #000;
+    border: 1px solid #619DF9;
+    padding: 3px;
+}
+
+.datepicker .previousMonth,
+.datepicker .nextMonth {
+    float: left;
+    padding: 10px;
+    background: url(../images/arrows_small.png) no-repeat;
+    height: 109px;
+    cursor: pointer;
+}
+
+.datepicker .previousMonth {
+    background-position: 5px 55px;
+}
+
+.datepicker .previousMonth:hover {
+    background-position: -15px 55px;
+}
+
+.datepicker .nextMonth {
+    background-position: -66px 55px;
+}
+
+.datepicker .nextMonth:hover {
+    background-position: -44px 55px;
+}
+
+.datepicker .dateText {
+    text-align: center;
+    float: none;
+    display: block;
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+    padding: 3px;
+}

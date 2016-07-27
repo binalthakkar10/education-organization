@@ -1,0 +1,83 @@
+<?php
+#error_reporting(E_ALL);
+#ini_set('display_error','On');
+$validate_fields = array('first_name' => '', 'last_name' => '', 'debt_score' => '', 'dob' => '', 'attend_date' => '');
+
+if ($_POST) {
+//echo '<pre>';print_r($_FILES);
+    $exceldata = array();
+    $fname = $_FILES['file1']['name'];
+    $chk_ext1 = explode(".", $fname);
+    if (strtolower($chk_ext1[1]) == "csv") {
+        $filename = $_FILES['file1']['tmp_name'];
+        if (($getfile = fopen($filename, "r")) !== FALSE) {
+            $i = 0;
+            while (($data = fgetcsv($getfile, 1000, ",")) !== FALSE) {
+                $num = count($data);
+                //  for ($c=0; $c < $num; $c++) {
+                if ($i > 0) {
+                    $result = $data;
+                    $str = implode(",", $result);
+                    $slice = explode(",", $str);
+                    $datas['first_name'] = $slice[0];
+                    $datas['last_name'] = $slice[1];
+                    $datas['debt_score'] = $slice[2];
+                    $datas['dob'] = $slice[3];
+                    $datas['attend_date'] = $slice[4];
+                    $datas['status'] = 1;
+                  
+                    $checkData = $debateObj->CheckDebatRanking($datas);
+               
+                    if ($checkData['id']!='') {
+                        //$condition = array('id' => $checkData['id']);
+                        $datas['modified_date'] = date('Y-m-d H:i:s');
+                        $datas['id']= $checkData['id'];
+                        $debateObj->admin_updateDebate($datas);
+                        flash($pagetitle . " updated successfully ");
+                    } else {
+                        $datas['created_date'] = date('Y-m-d H:i:s');
+                        $datas['modified_date'] = date('Y-m-d H:i:s');
+                        $debateObj->admin_addDebate($datas);
+                        flash($pagetitle . " is successfully added");
+                    }
+                }
+                $i++;
+            }
+        }
+    }
+}
+$InfoData1 = $debateObj->showAllDebate($parentids);
+?>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var Validator = jQuery('#itffrminput').validate({
+            rules: {
+                file1: {required: true, accept: "csv"}
+
+            },
+            messages: {
+            }
+        });
+    });
+</script>
+<div class="full_w">
+    <!-- Page Heading -->
+    <div class="h_title"><?php echo "Import Debt"; ?></div>
+    <form action="" method="post" name="itffrminput" id="itffrminput" enctype="multipart/form-data">
+        <input type="hidden" name="id" id="id" value="<?php echo isset($InfoData1['id']) ? $InfoData1['id'] : '' ?>" />
+
+        <div class="element">
+            <label><span class="blue">Notice: File header must be named as <?php echo implode(", ", array_keys($validate_fields)); ?> </span></label>
+        </div>
+        <div class="element">
+            <label>Select CSV File<span class="red">(required)</span> </label>
+            <input class="text" name="file1" type="file"  id="file1" size="35" />
+        </div>
+        <div class="entry">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="history.back()">Back</button>
+        </div>
+        <!-- End Form Buttons -->
+    </form>
+    <!-- End Form -->
